@@ -482,3 +482,7 @@ $(call inherit-product-if-exists, device/lge/hammerhead/wlan/bcmdhd/firmware/bcm
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.aicp.build.vendor_security_patch=2016-10-05
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
