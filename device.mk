@@ -123,11 +123,6 @@ PRODUCT_CHARACTERISTICS := nosdcard
 DEVICE_PACKAGE_OVERLAYS := \
     $(LOCAL_PATH)/overlay
 
-PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay/lineage-sdk \
-    $(LOCAL_PATH)/overlay/packages/apps/Snap
-
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service.legacy \
     libwpa_client \
