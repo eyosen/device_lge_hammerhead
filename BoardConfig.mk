@@ -55,6 +55,10 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/hammerhead/bluetooth
 # Filesystem
 TARGET_FS_CONFIG_GEN := device/lge/hammerhead/config.fs
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    device/lge/hammerhead
+
 # Wifi related defines
 WPA_SUPPLICANT_VERSION      := VER_0_8_X
 BOARD_WLAN_DEVICE           := bcmdhd
