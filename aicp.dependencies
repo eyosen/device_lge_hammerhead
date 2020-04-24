@@ -1,0 +1,12 @@
+[
+  {
+    "repository":  "nexus5oof/kernel_lge_hammerhead",
+    "target_path": "kernel/lge/hammerhead",
+    "branch":      "lineage-17.1"
+  },
+  {
+    "repository":  "nexus5oof/vendor_lge",
+    "target_path": "vendor/lge",
+    "branch":      "lineage-17.1"
+  }
+]

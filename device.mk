@@ -21,7 +21,6 @@
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay/lineage-sdk \
     $(LOCAL_PATH)/overlay/packages/apps/Snap
 
 PRODUCT_COPY_FILES += \
@@ -479,4 +478,4 @@ $(call inherit-product-if-exists, device/lge/hammerhead/wlan/bcmdhd/firmware/bcm
 
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2016-10-05
+    ro.aicp.build.vendor_security_patch=2016-10-05
