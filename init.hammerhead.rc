@@ -120,6 +120,16 @@ on boot
     write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
     write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 53059
 
+    # setup permissions for gesture and vibration related nodes
+    chown system system /sys/android_touch/vib_strength
+    chmod 0664 /sys/android_touch/vib_strength
+    write /sys/android_touch/vib_strength 0
+
+    # setup permissions for fast charge
+    chown system system /sys/kernel/fast_charge/force_fast_charge
+    chmod 0664 /sys/kernel/fast_charge/force_fast_charge
+    write /sys/kernel/fast_charge/force_fast_charge 1
+
 on post-fs-data
     write /sys/kernel/boot_adsp/boot 1
 

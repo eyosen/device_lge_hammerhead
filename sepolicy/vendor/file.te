@@ -13,3 +13,4 @@ type sysfs_ramdumps, fs_type, sysfs_type;
 
 type rfkill_device, dev_type;
 
+type sysfs_touchgestures, fs_type, sysfs_type;
