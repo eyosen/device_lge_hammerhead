@@ -13,3 +13,4 @@ allow init sysfs_leds:lnk_file { read };
 allow init system_file:{ dir file } { getattr relabelfrom };
 allow init unlabeled:{ dir file } { getattr relabelfrom };
 allow init sysfs_lowmemorykiller:file { open write };
+allow init sysfs_touchgestures:file { setattr open write };
