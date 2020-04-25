@@ -120,6 +120,19 @@ on boot
     write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
     write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 53059
 
+    # setup permissions for gesture and vibration related nodes
+    chown system system /sys/android_touch/doubletap2wake
+    chown system system /sys/android_touch/sweep2sleep
+    chown system system /sys/android_touch/sweep2wake
+    chown system system /sys/android_touch/vib_strength
+    chmod 0664 /sys/android_touch/doubletap2wake
+    chmod 0664 /sys/android_touch/sweep2sleep
+    chmod 0664 /sys/android_touch/sweep2wake
+    chmod 0664 /sys/android_touch/vib_strength
+    write /sys/android_touch/doubletap2wake 1
+    write /sys/android_touch/sweep2wake 1
+    write /sys/android_touch/vib_strength 0
+
 on post-fs-data
     write /sys/kernel/boot_adsp/boot 1
 
