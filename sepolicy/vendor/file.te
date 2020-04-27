@@ -11,8 +11,8 @@ type sysfs_rmnet, fs_type, sysfs_type;
 type sysfs_surfaceflinger, fs_type, sysfs_type;
 type sysfs_power_management, fs_type, sysfs_type;
 type sysfs_ramdumps, fs_type, sysfs_type;
-type sysfs_touchgestures, fs_type, sysfs_type;
-type sysfs_fastcharge, fs_type, sysfs_type;
-type sysfs_audiogain, fs_type, sysfs_type;
+type sysfs_partspower, fs_type, sysfs_type;
+type sysfs_partsaudio, fs_type, sysfs_type;
+type sysfs_partsvib, fs_type, sysfs_type;
 
 type rfkill_device, dev_type;
