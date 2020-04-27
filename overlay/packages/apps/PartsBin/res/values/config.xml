@@ -24,8 +24,14 @@
     <!-- Path to devices FastCharge sysfs -->
     <string name="pathFastChargeToggle">/sys/kernel/fast_charge/force_fast_charge</string>
 
+    <!-- Path to devices doubletap to wake toggle file -->
+    <string name="pathDoubleTapToWakeToggle">/sys/android_touch/doubletap2wake</string>
+
+    <!-- Path to devices sweep to wake toggle file -->
+    <string name="pathSweepToWakeToggle">/sys/android_touch/sweep2wake</string>
+
     <!-- Whether device allow changing vibrationlevels -->
-    <string name="pathSystemVibStrength">/sys/devices/virtual/timed_output/vibrator/vtg_level</string>
+    <string name="pathSystemVibStrength">/sys/class/timed_output/vibrator/vtg_level</string>
     <integer name="vibratorMinMV">0</integer>
     <integer name="vibratorMaxMV">100</integer>
     <integer name="vibratorDefaultMV">63</integer>

@@ -3,12 +3,16 @@ allow system_app proc_pagetypeinfo:file r_file_perms;
 allow system_app shell_data_file:dir r_dir_perms;
 allow system_app system_data_file:dir create_dir_perms;
 allow system_app system_suspend_control_service:service_manager find;
-allow system_app sysfs_touchgestures:file r_file_perms;
-allow system_app sysfs_fastcharge:dir { search };
-allow system_app sysfs_fastcharge:file { rw_file_perms };
-allow system_app sysfs_audiogain:dir { search };
-allow system_app sysfs_audiogain:file { rw_file_perms };
+allow system_app sysfs_partstouch:dir { search };
+allow system_app sysfs_partstouch:file rw_file_perms;
+allow system_app sysfs_partspower:dir { search };
+allow system_app sysfs_partspower:file { rw_file_perms };
+allow system_app sysfs_partsaudio:dir { search };
+allow system_app sysfs_partsaudio:file { rw_file_perms };
+allow system_app sysfs_partsvib:dir { search };
+allow system_app sysfs_partsvib:file { rw_file_perms };
 allow system_app sysfs_vibrator:dir { search };
+allow system_app sysfs_vibrator:file rw_file_perms;
 
 binder_call(system_app, apexd)
 binder_call(system_app, installd)

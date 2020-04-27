@@ -152,11 +152,15 @@
 /sys/devices/mdp(.*)/qcom,mdss_fb_primary(.*)/leds/lcd-backlight/max_brightness      u:object_r:sysfs_leds:s0
 
 # sysfs - kernel features
-/sys/android_touch/doubletap2wake                           u:object_r:sysfs_touchgestures:s0
-/sys/android_touch/sweep2sleep                              u:object_r:sysfs_touchgestures:s0
-/sys/android_touch/sweep2wake                               u:object_r:sysfs_touchgestures:s0
-/sys/android_touch/vib_strength                             u:object_r:sysfs_touchgestures:s0
-/sys/kernel/fast_charge/force_fast_charge                   u:object_r:sysfs_fastcharge:s0
+/sys/android_touch/doubletap2wake                           u:object_r:sysfs_partstouch:s0
+/sys/android_touch/sweep2sleep                              u:object_r:sysfs_partstouch:s0
+/sys/android_touch/sweep2wake                               u:object_r:sysfs_partstouch:s0
+/sys/android_touch/vib_strength                             u:object_r:sysfs_partstouch:s0
+/sys/kernel/fast_charge/force_fast_charge                   u:object_r:sysfs_partspower:s0
+# Audio
+/sys/kernel/sound_control_3/gpl_headphone_gain              u:object_r:sysfs_partsaudio:s0
+/sys/kernel/sound_control_3/gpl_mic_gain                    u:object_r:sysfs_partsaudio:s0
+/sys/devices/virtual/timed_output/vibrator/vtg_level        u:object_r:sysfs_partsvib:s0
 
 # sysfs - sysfs_power_management
 /sys/devices/(fe20|fc88|fdce)0000\.qcom,(lpass|mss|venus)/subsys[0-2]/restart_level u:object_r:sysfs_power_management:s0
