@@ -156,7 +156,7 @@
 /sys/android_touch/sweep2sleep                              u:object_r:sysfs_touchgestures:s0
 /sys/android_touch/sweep2wake                               u:object_r:sysfs_touchgestures:s0
 /sys/android_touch/vib_strength                             u:object_r:sysfs_touchgestures:s0
-/sys/kernel/fast_charge/force_fast_charge                   u:object_r:sysfs_touchgestures:s0
+/sys/kernel/fast_charge/force_fast_charge                   u:object_r:sysfs_fastcharge:s0
 
 # sysfs - sysfs_power_management
 /sys/devices/(fe20|fc88|fdce)0000\.qcom,(lpass|mss|venus)/subsys[0-2]/restart_level u:object_r:sysfs_power_management:s0

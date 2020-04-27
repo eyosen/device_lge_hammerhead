@@ -19,11 +19,6 @@
 #
 # Everything in this directory will become public
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
-TARGET_BOOTANIMATION_HALF_RES := true
-
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay/packages/apps/Snap
@@ -154,6 +149,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     librs_jni
+
+# PartsBin
+PRODUCT_PACKAGES += \
+    PartsBin
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
@@ -488,3 +487,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOTANIMATION_HALF_RES := true
