@@ -1,0 +1,1 @@
+allow hal_vibrator_default sysfs_partsvib:file { rw_file_perms };
