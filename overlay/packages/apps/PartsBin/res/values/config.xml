@@ -21,6 +21,9 @@
     <!-- Whether device supports offscreen gestures -->
     <bool name="config_device_supports_gestures">false</bool>
 
+    <!-- Whether device provides panel options -->
+    <bool name="config_device_supports_panels">false</bool>
+
     <!-- Path to devices FastCharge sysfs -->
     <string name="pathFastChargeToggle">/sys/kernel/fast_charge/force_fast_charge</string>
 
