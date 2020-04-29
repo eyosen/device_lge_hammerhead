@@ -39,19 +39,11 @@
     <integer name="vibratorMaxMV">100</integer>
     <integer name="vibratorDefaultMV">63</integer>
 
-    <!-- Device audio speaker gain sysfs -->
-    <string name="pathAudioSpeakerGain"></string>
-
-    <!-- Device audio speaker min-max-default values -->
-    <integer name="audioSpeakerGainMin">-84</integer>
-    <integer name="audioSpeakerGainMax">40</integer>
-    <integer name="audioSpeakerGainDefault">0</integer>
-
     <!-- Device audio mic gain sysfs -->
     <string name="pathAudioMicGain">/sys/kernel/sound_control_3/gpl_mic_gain</string>
 
     <!-- Device audio mic min-max-default values -->
-    <integer name="audioMicGainMin">-84</integer>
+    <integer name="audioMicGainMin">0</integer>
     <integer name="audioMicGainMax">40</integer>
     <integer name="audioMicGainDefault">0</integer>
 
@@ -59,7 +51,7 @@
     <string name="pathAudioHeadphoneGain">/sys/kernel/sound_control_3/gpl_headphone_gain</string>
 
     <!-- Device audio headphone min-max-default values -->
-    <integer name="audioHeadphoneGainMin">-84</integer>
+    <integer name="audioHeadphoneGainMin">0</integer>
     <integer name="audioHeadphoneGainMax">40</integer>
     <integer name="audioHeadphoneGainDefault">0</integer>
 </resources>
