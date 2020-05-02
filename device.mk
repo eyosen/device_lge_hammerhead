@@ -127,6 +127,9 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay/packages/apps/Snap
 
+# System properties
+-include $(LOCAL_PATH)/system_prop.mk
+
 PRODUCT_PACKAGES := \
     android.hardware.wifi@1.0-service.legacy \
     libwpa_client \
@@ -438,12 +441,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     camera.disable_zsl_mode=1
 
-# SurfaceFlinger
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
-    ro.surface_flinger.vsync_event_phase_offset_ns=7500000 \
-    ro.surface_flinger.vsync_sf_event_phase_offset_ns=5000000
-
 # Input resampling configuration
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.input.noresample=1
@@ -490,4 +487,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
-TARGET_BOOTANIMATION_HALF_RES := true
