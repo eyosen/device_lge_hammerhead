@@ -1,0 +1,12 @@
+[
+  {
+    "repository":  "z3DD3r/android_kernel_lge_hammerhead",
+    "target_path": "kernel/lge/hammerhead",
+    "branch":      "lineage-18.1"
+  },
+  {
+    "repository":  "z3DD3r/android_vendor_lge",
+    "target_path": "vendor/lge",
+    "branch":      "lineage-18.1"
+  }
+]
