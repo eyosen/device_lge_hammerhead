@@ -1,5 +1,5 @@
 # Inherit some common AICP stuff.
-$(call inherit-product, vendor/aicp/config/common_mini_phone.mk)
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
