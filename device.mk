@@ -186,6 +186,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
+    android.hardware.audio@2.0-service \
     audio.primary.msm8974 \
     audio.a2dp.default \
     audio.usb.default \
@@ -195,6 +196,7 @@ PRODUCT_PACKAGES += \
 # Audio effects
 PRODUCT_PACKAGES += \
     android.hardware.audio.effect@2.0-impl \
+    android.hardware.audio.effect@2.0-service \
     libqcomvisualizer \
     libqcompostprocbundle
 
