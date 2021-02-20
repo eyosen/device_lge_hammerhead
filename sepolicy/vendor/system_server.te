@@ -24,6 +24,9 @@ allow system_server app_zygote:process getattr;
 allow system_server hal_light_default:process getpgid;
 allow system_server hal_light_default:process signal;
 
+allow system_server hal_vibrator_default:process getpgid;
+allow system_server hal_vibrator_default:process signal;
+
 allow system_server unlabeled:file { read getattr unlink };
 allow system_server unlabeled:lnk_file { read getattr unlink };
 
