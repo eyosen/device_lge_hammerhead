@@ -157,7 +157,6 @@
 /(system/vendor|vendor)/bin/timekeep                u:object_r:timekeep_exec:s0
 
 # sysfs - kernel features
-/sys/android_touch/vib_strength                             u:object_r:sysfs_partsvib:s0
 /sys/kernel/fast_charge/force_fast_charge                   u:object_r:sysfs_partspower:s0
 # Audio
 /sys/kernel/sound_control_3/gpl_headphone_gain              u:object_r:sysfs_partsaudio:s0

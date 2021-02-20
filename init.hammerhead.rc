@@ -207,11 +207,6 @@ on boot
     chmod 664 /sys/devices/system/cpu/cpu2/online
     chmod 664 /sys/devices/system/cpu/cpu3/online
 
-    # setup permissions for gesture and vibration related nodes
-    chown system system /sys/android_touch/vib_strength
-    chmod 0664 /sys/android_touch/vib_strength
-    write /sys/android_touch/vib_strength 0
-
     # setup permissions for fast charge
     chown system system /sys/kernel/fast_charge/force_fast_charge
     chmod 0664 /sys/kernel/fast_charge/force_fast_charge
