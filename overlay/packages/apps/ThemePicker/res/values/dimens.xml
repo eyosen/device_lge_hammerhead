@@ -18,4 +18,6 @@
     <dimen name="preview_pager_max_height">300dp</dimen>
     <dimen name="preview_pager_min_height">300dp</dimen>
     <dimen name="preview_pager_height">300dp</dimen>
+
+    <dimen name="option_title_font_text_size">11sp</dimen>
 </resources>
