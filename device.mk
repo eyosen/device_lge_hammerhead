@@ -193,8 +193,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio.effect@2.0-impl \
     libqcomvisualizer \
-    libqcomvoiceprocessing \
-    libqcomvoiceprocessingdescriptors \
     libqcompostprocbundle
 
 PRODUCT_COPY_FILES += \
