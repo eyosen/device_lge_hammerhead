@@ -104,9 +104,6 @@
 /persist/widevine(/.*)?           u:object_r:persist_drm_file:s0
 /persist/wifi(/.*)?               u:object_r:persist_wifi_file:s0
 
-# Sysfs entry for the FastCharge node
-/sys/kernel/fast_charge(/.*)?                           u:object_r:sysfs_fastcharge_switch:s0
-
 # Sysfs entry for the RmNet function driver
 /sys/class/android_usb/f_rmnet_smd_sdio/transport  --  u:object_r:sysfs_rmnet:s0
 /sys/devices/virtual/android_usb/android0/f_rmnet_smd_sdio/transport  --  u:object_r:sysfs_rmnet:s0
